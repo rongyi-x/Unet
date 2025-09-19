@@ -1,0 +1,19 @@
+def get_config():
+    return {
+        "model_folder": "./weights/",
+        "train_images": "./Carvana/images/train/",
+        "train_masks": "./Carvana/masks/train/",
+        "valid_images": "./Carvana/images/valid/",
+        "valid_masks": "./Carvana/masks/valid/",
+        "test_images": "./Carvana/images/test/",
+        "test_masks": "./Carvana/masks/test/",
+        "height": 256,
+        "width": 256,
+        "batch_size": 16,
+        "pin_memory": True,
+        "lr": 1e-4,
+        "loss": "./loss/",
+        "preload_model": "unet.pt",
+        "epoch": 5,
+        "result": "./result/",
+    }
